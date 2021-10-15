@@ -1,0 +1,63 @@
+.singleVeggiesCard__item {
+    background-color: var(--color-base-lightest);
+    box-shadow: 0px 0px 10px 0px var(--color-base);
+    border-radius: 0.7rem;
+    margin: 1rem 0.2rem;
+    padding: 2rem 2.5rem;
+    flex-basis: 15%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.singleVeggiesCard__image {
+    width: 11rem;
+    height: 11rem;
+}
+
+.singleVeggiesCard__name {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--color-base-darker);
+}
+
+.singleVeggiesCard__price {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    background-color: var(--color-base-lighter);
+    color: var(--color-base-darker);
+    border-radius: 0.75rem;
+    padding: 0.2rem 0.4rem;
+}
+.singleVeggiesCard__price_cut {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-base);
+    text-decoration: line-through;
+}
+.singleVeggiesCard__price_empty {
+    margin-top: 0.3rem;
+}
+.singleVeggiesCard__discount {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    background-color: var(--color-base-lighter);
+    color: var(--color-base-darker);
+    border-radius: 0.75rem;
+    padding: 0.2rem 0.4rem;
+}
+.singleVeggiesCard__stock {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--color-base-darker);
+}
+.singleVeggiesCard__button {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

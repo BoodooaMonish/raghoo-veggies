@@ -1,0 +1,72 @@
+.faqs {
+    width: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.faqs__heading {
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--color-base);
+    margin: 3rem 0 3rem 0;
+    position: relative;
+    z-index: 4;
+}
+.faqs__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 4;
+}
+.faqs__card {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.faqs__text {
+    text-align: center;
+    color: var(--color-base-darkest);
+    position: relative;
+}
+
+.faqs__image {
+    background-image: url(../../doc-min.svg);
+    background-repeat: no-repeat;
+    /* min-width: calc(0.625rem * 10); */
+    min-width: 6.25rem;
+    /* height: calc(0.625rem * 10); */
+    height: 6.25rem;
+    /* background-size: calc(9.375rem * 10) calc(9.375rem * 10); */
+    background-size: 93.75rem 93.75rem;
+}
+.faqs__image_cart {
+    /* background-position: 0 calc(-3.75rem * 10); */
+    background-position: 0 -37.5rem;
+}
+.faqs__image_truck {
+    /* background-position: calc(-0.625rem * 10) calc(-3.75rem * 10); */
+    background-position: -6.25rem -37.5rem;
+}
+.faqs__image_wallet {
+    /* background-position: calc(-1.25rem * 10) calc(-3.75rem * 10); */
+    background-position: -12.5rem -37.5rem;
+}
+
+@media (max-width: 600px) {
+    .faqs__cards {
+        flex-direction: column;
+    }
+    .faqs__card {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,57 @@
+/* All buttons styles except the forms styles are written here  */
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    min-width: 5rem;
+    text-align: center;
+    transition: 0.1s ease-out;
+    padding: 0.6rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.button_primary-color {
+    border: none;
+    color: var(--color-base-lightest);
+    background-color: var(--color-base-darker);
+}
+
+.button_primary-color:hover {
+    background-color: var(--color-base-light);
+    color: var(--color-base-darker);
+}
+.button_primary-color:focus {
+    background-color: var(--color-base-lighter);
+    color: var(--color-base-darker);
+}
+
+.button_secondary-color {
+    border: none;
+    color: var(--color-base-lightest);
+    background-color: var(--color-base);
+}
+
+.button_secondary-color:hover {
+    background-color: var(--color-base-darker);
+}
+.button_secondary-color:focus {
+    background-color: var(--color-base-darkest);
+}
+
+.button_tertiary-color {
+    border: 0.1rem solid var(--color-base-darker);
+    color: var(--color-base-darker);
+    background-color: var(--color-base-lightest);
+}
+
+.button_tertiary-color:hover {
+    background-color: var(--color-base-darker);
+    color: var(--color-base-lightest);
+}
+.button_tertiary-color:focus {
+    background-color: var(--color-base-darker);
+    color: var(--color-base-lightest);
+}

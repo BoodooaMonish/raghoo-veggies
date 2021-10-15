@@ -1,0 +1,233 @@
+.singleVeggies {
+    display: flex;
+    width: inherit;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 4rem !important;
+}
+.singleVeggies__imageContainer {
+    flex-basis: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-base-lighter);
+    border-radius: 0.3rem;
+    padding: 3rem 0rem;
+    margin-left: 1rem;
+}
+.singleVeggies__form {
+    padding: 0 2rem;
+    flex-basis: 49%;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.singleVeggies__image {
+    width: 20rem;
+    height: 20rem;
+}
+.singleVeggies__name {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--color-base);
+}
+.singleVeggies__priceContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.singleVeggies__price_cut {
+    margin: 0;
+    text-decoration: line-through;
+    color: var(--color-base-dark);
+    font-size: 1.2rem;
+}
+.singleVeggies__discount {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-base-darker);
+    margin-left: 1rem;
+}
+.singleVeggies__price {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-base-darker);
+}
+.singleVeggies__stock {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--color-base-dark);
+}
+.singleVeggies__quantityContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.singleVeggies__quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.singleVeggies__quantity_button {
+    display: block;
+    font-size: 0;
+    width: 2rem;
+    height: 1rem;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.singleVeggies__quantity_button_none {
+    cursor: default;
+    user-select: none;
+    visibility: hidden;
+}
+
+.singleVeggies__quantity_button_decrement:hover > *::before,
+.singleVeggies__quantity_button_decrement:hover > *::after,
+.singleVeggies__quantity_button_increment:hover > *::before,
+.singleVeggies__quantity_button_increment:hover > *::after {
+    background-color: var(--color-base-dark);
+}
+
+.singleVeggies__quantity_button_decrement::before,
+.singleVeggies__quantity_button_increment::before,
+.singleVeggies__quantity_button_decrement::after,
+.singleVeggies__quantity_button_increment::after {
+    content: "";
+    font-size: inherit;
+    display: inherit;
+    background-color: var(--color-base);
+    width: inherit;
+    height: 75%;
+    border-radius: inherit;
+}
+.singleVeggies__quantity_button_decrement::after {
+    transform: translate(-30%, -180%) rotateZ(-45deg);
+}
+.singleVeggies__quantity_button_decrement::before {
+    transform: translate(-30%, 80%) rotateZ(45deg);
+}
+.singleVeggies__quantity_button_increment::after {
+    transform: translate(-30%, -180%) rotateZ(45deg);
+}
+.singleVeggies__quantity_button_increment::before {
+    transform: translate(-30%, 80%) rotateZ(-45deg);
+}
+
+.singleVeggies__quantity_button_decrement:hover::before,
+.singleVeggies__quantity_button_decrement:hover::after,
+.singleVeggies__quantity_button_increment:hover::before,
+.singleVeggies__quantity_button_increment:hover::after {
+    background-color: var(--color-base-dark);
+}
+.singleVeggies__quantity_button_decrement:focus::before,
+.singleVeggies__quantity_button_decrement:focus::after,
+.singleVeggies__quantity_button_increment:focus::before,
+.singleVeggies__quantity_button_increment:focus::after {
+    background-color: var(--color-base-darker);
+}
+
+.singleVeggies__quantity_input {
+    color: var(--color-base-darker);
+    font-weight: bold;
+    width: 12ch;
+    text-align: center;
+    margin: 0 0.3rem;
+    user-select: none;
+    border: none;
+    padding: 0.2rem 0.2rem;
+}
+.singleVeggies__quantity_input:focus {
+    border: none;
+}
+
+.singleVeggies__quantity_gram {
+    color: var(--color-base-darker);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.singleVeggies__button {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.singleVeggies__othersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.singleVeggies__others-heading {
+    color: var(--color-base);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.singleVeggies__others-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media (max-width: 830px) {
+    .singleVeggies__imageContainer {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 667px) {
+    .singleVeggies__discount {
+        margin-left: 0;
+    }
+}
+@media (max-width: 607px) {
+    .singleVeggies {
+        flex-direction: column;
+    }
+    .singleVeggies__imageContainer {
+        width: 95%;
+        overflow: hidden;
+    }
+    .singleVeggies__discount {
+        margin-left: 1rem;
+    }
+    .singleVeggies__name {
+        margin: 0.5rem 0;
+    }
+    .singleVeggies__stock {
+        margin-top: 1rem;
+    }
+    .singleVeggies__quantityContainer {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 360px) {
+    .singleVeggies__discount {
+        margin-left: 0;
+    }
+}

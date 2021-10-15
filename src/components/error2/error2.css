@@ -1,0 +1,15 @@
+.error2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.error2__big-text {
+    color: var(--color-base-darker);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.error2__text {
+    color: var(--color-base-darker);
+}

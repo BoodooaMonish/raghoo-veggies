@@ -1,0 +1,28 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.loading__spinner {
+    display: block;
+    font-size: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 0.6rem solid var(--color-base);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 800ms linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading__text {
+    color: var(--color-base-darker);
+    margin: 1rem 0 0 0;
+}

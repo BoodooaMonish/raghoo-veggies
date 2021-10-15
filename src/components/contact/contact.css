@@ -1,0 +1,101 @@
+.contact {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact__heading {
+    text-align: center;
+    flex-basis: 100%;
+    color: var(--color-base);
+    font-size: 1.75rem;
+}
+.contact__img-container,
+.contact__text-container {
+    width: 48%;
+}
+.contact__image {
+    position: relative;
+    margin: 0 auto;
+    background-image: url(../../contact.svg);
+    background-repeat: no-repeat;
+    /* width: calc(6.25rem * 3); */
+    width: 18.75rem;
+    /* height: calc(9.375rem * 3); */
+    height: 28.125rem;
+    /* background-size: calc(6.25rem * 3) calc(9.375rem * 3); */
+    background-size: 18.75rem 28.125rem;
+    background-position: 0 0;
+}
+.contact__image::before {
+    position: absolute;
+    top: -5%;
+    left: -40%;
+    z-index: -1;
+    content: "";
+    background-image: url(../../splash.svg);
+    background-repeat: no-repeat;
+    /* width: calc(6.25rem * 5); */
+    width: 31.25rem;
+    /* height: calc(6.25rem * 5); */
+    height: 31.25rem;
+    /* background-size: calc(6.25rem * 5) calc(6.25rem * 5); */
+    background-size: 31.25rem 31.25rem;
+    background-position: 0 0;
+}
+.contact__text {
+    color: var(--color-base-darker);
+}
+.contact__button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 822px) {
+    .contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact__img-container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1.5625rem;
+    }
+    .contact__text-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact__text {
+        max-width: 80%;
+        text-align: center;
+    }
+    .contact__button {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 560px) {
+    .contact__image {
+        /* width: calc(6.25rem * 2); */
+        width: 12.5rem;
+        /* height: calc(9.375rem * 2); */
+        height: 18.75rem;
+        /* background-size: calc(6.25rem * 2) calc(9.375rem * 2); */
+        background-size: 12.5rem 18.75rem;
+    }
+    .contact__image::before {
+        /* width: calc(6.25rem * 3.3); */
+        width: 20.625rem;
+        /* height: calc(6.25rem * 3.3); */
+        height: 20.625rem;
+        /* background-size: calc(6.25rem * 3.3) calc(6.25rem * 3.3); */
+        background-size: 20.625rem 20.625rem;
+    }
+}

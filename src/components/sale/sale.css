@@ -1,0 +1,222 @@
+.sale {
+    width: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sale__heading {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--color-base);
+    margin-bottom: 3rem;
+}
+
+.sale__cards {
+    position: relative;
+    white-space: nowrap;
+}
+
+.sale__card {
+    background-color: var(--color-base-lightest);
+    box-shadow: 0px 0px 10px 0px var(--color-base);
+    border-radius: 0.7rem;
+    transition: all 0.4s linear;
+}
+
+.sale__card_hidden {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    opacity: 0;
+    z-index: 1;
+}
+.sale__card_previous {
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transform: scale(0.9);
+    opacity: 0.5;
+    z-index: 9;
+    user-select: none;
+}
+.sale__card_next {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    transform: scale(0.9);
+    opacity: 0.5;
+    z-index: 9;
+    user-select: none;
+}
+.sale__card_active {
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    opacity: 1;
+    z-index: 10;
+    user-select: auto;
+}
+
+.sale__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    position: relative;
+}
+
+.sale__image {
+    height: 9rem;
+    width: 9rem;
+}
+
+.sale__discount {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    background-color: var(--color-base-lighter);
+    color: var(--color-base-darker);
+    border-radius: 0.75rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.sale__price {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-base);
+    text-decoration: line-through;
+}
+
+.sale__text {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-base-darker);
+}
+
+.sale__stock {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--color-base-darker);
+}
+
+.sale__button {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sale__card_previous > .sale__content > .sale__button,
+.sale__card_next > .sale__content > .sale__button {
+    visibility: hidden;
+}
+
+.sale__previous {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0.3rem;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+    transition: transform 0.2s linear;
+}
+.sale__next {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding: 0.3rem;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+    transition: transform 0.2s linear;
+}
+
+.sale__next:hover > .sale__icon_next,
+.sale__next:focus > .sale__icon_next,
+.sale__previous:hover > .sale__icon_previous,
+.sale__previous:focus > .sale__icon_previous {
+    transform: scale(1.1);
+}
+
+.sale__icon_previous,
+.sale__icon_next {
+    display: block;
+    font-size: 0;
+    width: 2.5rem;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: transparent;
+}
+.sale__icon_previous::before,
+.sale__icon_next::before {
+    content: "";
+    font-size: inherit;
+    display: inherit;
+    background-color: var(--color-base);
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+.sale__icon_previous::after,
+.sale__icon_next::after {
+    content: "";
+    font-size: inherit;
+    display: inherit;
+    background-color: var(--color-base);
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+.sale__icon_previous::after {
+    transform: translateY(-250%) rotateZ(-45deg);
+}
+.sale__icon_previous::before {
+    transform: translateY(150%) rotateZ(45deg);
+}
+.sale__icon_next::after {
+    transform: translateY(-250%) rotateZ(45deg);
+}
+.sale__icon_next::before {
+    transform: translateY(150%) rotateZ(-45deg);
+}
+
+@media (min-width: 1000px) {
+    .sale {
+        align-items: stretch;
+    }
+    .sale__cards {
+        white-space: normal;
+        width: inherit;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sale__card {
+        transform: none !important;
+        position: static !important;
+        opacity: 1 !important;
+    }
+    .sale__next,
+    .sale__previous {
+        display: none;
+    }
+    .sale__card_previous > .sale__content > .sale__button,
+    .sale__card_next > .sale__content > .sale__button {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,39 @@
+/* 
+Every global styles used is stored here!
+*/
+
+@font-face {
+    font-family: "droidSans";
+    src: url("./fonts/DroidSans-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "droidSans";
+    src: url("./fonts/DroidSans-Bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --color-base: #007a41;
+    --color-base-dark: #00522c;
+    --color-base-darker: #002916;
+    --color-base-darkest: #1e1e1e;
+    --color-base-light: #c9c9c9;
+    --color-base-lighter: #e1e1e1;
+    --color-base-lightest: #ffffff;
+    --color-warning: red;
+    --color-success: green;
+    --color-discount: gold;
+}
+
+* {
+    font-family: "droidSans", sans-serif, serif;
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

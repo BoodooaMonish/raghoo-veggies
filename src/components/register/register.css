@@ -1,0 +1,103 @@
+.register {
+    display: flex;
+    width: 60%;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register__heading {
+    width: 100%;
+    text-align: center;
+    color: var(--color-base);
+}
+
+.register__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register__input {
+    margin: 1rem 0;
+    width: 80%;
+    transition: all 0.1s ease;
+    position: relative;
+}
+.register__input-label {
+    background-color: var(--color-base-lightest);
+    font-size: 1.1rem;
+    padding: 0 0.3rem;
+    position: absolute;
+    top: -35%;
+    left: 5%;
+}
+.register__input-box {
+    border: 0.15rem solid var(--color-base-dark);
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.1rem;
+    width: 99%;
+    display: block;
+}
+.register__input-box_success {
+    border-color: var(--color-success);
+}
+.register__input-box_fail {
+    border-color: var(--color-warning);
+}
+.register__button {
+    background-color: var(--color-base);
+    color: var(--color-base-lightest);
+    border: 0.1rem solid var(--color-base);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    margin: 2rem auto;
+    font-weight: bold;
+    width: 80%;
+}
+.register__button:hover {
+    background-color: var(--color-base-dark);
+}
+.register__button:focus {
+    background-color: var(--color-base-darker);
+}
+
+.register__more-info {
+    margin-top: 1rem;
+}
+.register__more-info a {
+    color: var(--color-base-darker);
+    font-weight: bold;
+}
+.register__more-info a:hover,
+.register__more-info a:focus {
+    color: var(--color-base-dark);
+}
+.register__more-info p {
+    color: var(--color-base-darker);
+}
+
+.form__message {
+    margin: 0.1rem;
+    color: var(--color-warning);
+    text-align: center;
+    width: 89%;
+}
+
+@media screen and (max-width: 1000px) {
+    .register {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .register {
+        padding: 1.5rem 0;
+        width: 100%;
+    }
+}

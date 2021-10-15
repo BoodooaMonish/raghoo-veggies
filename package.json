@@ -1,0 +1,36 @@
+{
+  "name": "raghoos_veggies",
+  "version": "1.0.0",
+  "description": "Raghoo Veggies is an online shopping store that sells vegetables.",
+  "keywords": [],
+  "author": "Boodooa Monish",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@babel/preset-react": "^7.13.13",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "parcel-bundler": "^1.12.5",
+    "postcss-modules": "^4.0.0",
+    "prettier": "^2.2.1"
+  },
+  "main": "postcss.config.js"
+}
