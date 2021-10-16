@@ -220,3 +220,23 @@
         visibility: visible;
     }
 }
+
+@media (max-width: 663px) {
+    .sale__card {
+        transition: all 0.3s linear;
+    }
+    .sale__card_previous {
+        left: -60%;
+    }
+    .sale__card_next {
+        left: 60%;
+    }
+}
+@media (max-width: 518px) {
+    .sale__card_previous {
+        left: -30%;
+    }
+    .sale__card_next {
+        left: 30%;
+    }
+}

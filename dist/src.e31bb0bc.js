@@ -37745,7 +37745,7 @@ var fetchVeggies = function fetchVeggies() {
   return function (dispatch) {
     dispatch(fetchVeggiesRequest());
 
-    _axios.default.get("./veggies.json").then(function (response) {
+    _axios.default.get("/api/veggies.json").then(function (response) {
       var veggies = response.data;
       dispatch(fetchVeggiesSuccess(veggies));
     }).catch(function (error) {
@@ -40912,7 +40912,7 @@ var SingleVeggies = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       // when the component is mounted, it checks if the redux store contains the veggies information
       // if not, it will dispatch an action to fetch the veggies from a database
-      if (this.props.data === undefined) {
+      if (this.props.veggiesLength === 0) {
         this.props.fetchVeggies();
       }
     }
@@ -41155,7 +41155,8 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
     data: singleVeggies,
     rand: createRandVeggies(),
     singleVeggiesLoading: state.veggies.loading,
-    singleVeggiesError: state.veggies.error
+    singleVeggiesError: state.veggies.error,
+    veggiesLength: state.veggies.data.length
   };
 }; // the "fetchVeggies" and "updateStockQuantity" actions are added to the "singleVeggies" component props
 
@@ -42553,7 +42554,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40931" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40071" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

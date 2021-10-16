@@ -32,7 +32,7 @@ export const fetchVeggies = () => {
     return (dispatch) => {
         dispatch(fetchVeggiesRequest());
         axios
-            .get("./veggies.json")
+            .get("/api/veggies.json")
             .then((response) => {
                 const veggies = response.data;
                 dispatch(fetchVeggiesSuccess(veggies));
