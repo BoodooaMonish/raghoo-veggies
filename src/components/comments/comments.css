@@ -46,6 +46,7 @@
     order: 2;
     display: block;
     width: 100%;
+    overflow: hidden;
 }
 .comments__card {
     position: relative;

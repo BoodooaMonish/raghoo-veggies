@@ -23,7 +23,7 @@ class SingleVeggies extends Component {
     componentDidMount() {
         // when the component is mounted, it checks if the redux store contains the veggies information
         // if not, it will dispatch an action to fetch the veggies from a database
-        if (this.props.data === undefined) {
+        if (this.props.veggiesLength === 0) {
             this.props.fetchVeggies();
         }
     }
@@ -259,6 +259,7 @@ const mapStateToProps = (state, ownProps) => {
         rand: createRandVeggies(),
         singleVeggiesLoading: state.veggies.loading,
         singleVeggiesError: state.veggies.error,
+        veggiesLength: state.veggies.data.length,
     };
 };
 
