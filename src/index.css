@@ -3,14 +3,14 @@ Every global styles used is stored here!
 */
 
 @font-face {
-    font-family: "droidSans";
-    src: url("./fonts/DroidSans-webfont.woff") format("woff");
+    font-family: "sansation";
+    src: url("./fonts/Sansation-Regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: "droidSans";
-    src: url("./fonts/DroidSans-Bold-webfont.woff") format("woff");
+    font-family: "sansation";
+    src: url("./fonts/Sansation-Bold-webfont.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
@@ -29,7 +29,7 @@ Every global styles used is stored here!
 }
 
 * {
-    font-family: "droidSans", sans-serif, serif;
+    font-family: "sansation", sans-serif, serif;
 }
 html,
 body {

@@ -41518,7 +41518,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/DroidSans-webfont.woff":[["DroidSans-webfont.e6d8613d.woff","fonts/DroidSans-webfont.woff"],"fonts/DroidSans-webfont.woff"],"./fonts/DroidSans-Bold-webfont.woff":[["DroidSans-Bold-webfont.b5a9e5b6.woff","fonts/DroidSans-Bold-webfont.woff"],"fonts/DroidSans-Bold-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/@babel/runtime/helpers/esm/defineProperty.js":[function(require,module,exports) {
+},{"./fonts/Sansation-Regular-webfont.woff":[["Sansation-Regular-webfont.838e0a9c.woff","fonts/Sansation-Regular-webfont.woff"],"fonts/Sansation-Regular-webfont.woff"],"./fonts/Sansation-Bold-webfont.woff":[["Sansation-Bold-webfont.bdef08e2.woff","fonts/Sansation-Bold-webfont.woff"],"fonts/Sansation-Bold-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/@babel/runtime/helpers/esm/defineProperty.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42554,7 +42554,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40071" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

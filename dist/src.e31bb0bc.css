@@ -549,7 +549,7 @@
     color: var(--color-base-darker);
 }
 .cartList__shoppingCart__card__discount {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -557,7 +557,7 @@
     padding: 0.2rem 0.4rem;
 }
 .cartList__shoppingCart__card__price {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -566,7 +566,7 @@
 }
 .cartList__shoppingCart__card__price_cut {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-base);
     text-decoration: line-through;
 }
@@ -1082,7 +1082,7 @@
 }
 
 .sale__discount {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -1092,7 +1092,7 @@
 
 .sale__price {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-base);
     text-decoration: line-through;
 }
@@ -1762,7 +1762,7 @@
 }
 
 .veggies__price {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -1771,7 +1771,7 @@
 }
 .veggies__price_cut {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-base);
     text-decoration: line-through;
 }
@@ -1779,7 +1779,7 @@
     margin-top: 0.3rem;
 }
 .veggies__discount {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -1826,7 +1826,7 @@
 }
 
 .singleVeggiesCard__price {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -1835,7 +1835,7 @@
 }
 .singleVeggiesCard__price_cut {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-base);
     text-decoration: line-through;
 }
@@ -1843,7 +1843,7 @@
     margin-top: 0.3rem;
 }
 .singleVeggiesCard__discount {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -2235,14 +2235,14 @@ Every global styles used is stored here!
 */
 
 @font-face {
-    font-family: "droidSans";
-    src: url("/DroidSans-webfont.e6d8613d.woff") format("woff");
+    font-family: "sansation";
+    src: url("/Sansation-Regular-webfont.838e0a9c.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: "droidSans";
-    src: url("/DroidSans-Bold-webfont.b5a9e5b6.woff") format("woff");
+    font-family: "sansation";
+    src: url("/Sansation-Bold-webfont.bdef08e2.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
@@ -2261,7 +2261,7 @@ Every global styles used is stored here!
 }
 
 * {
-    font-family: "droidSans", sans-serif, serif;
+    font-family: "sansation", sans-serif, serif;
 }
 html,
 body {

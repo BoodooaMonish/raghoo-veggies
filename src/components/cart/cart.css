@@ -103,7 +103,7 @@
     color: var(--color-base-darker);
 }
 .cartList__shoppingCart__card__discount {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -111,7 +111,7 @@
     padding: 0.2rem 0.4rem;
 }
 .cartList__shoppingCart__card__price {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0;
     background-color: var(--color-base-lighter);
     color: var(--color-base-darker);
@@ -120,7 +120,7 @@
 }
 .cartList__shoppingCart__card__price_cut {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-base);
     text-decoration: line-through;
 }
