@@ -1,8 +1,11 @@
 
 .cache/
 coverage/
-# dist/*
-# !dist/index.html
+dist/*
+!dist/index.html
+!dist/api/
+!dist/veggies/
+!_redirects
 node_modules/
 *.log
 
