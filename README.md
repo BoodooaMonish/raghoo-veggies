@@ -12,21 +12,21 @@ The website is currently hosted at <https://raghoo-veggies-474e63.netlify.app/>
 
 ### Table of Content
 
--   [Business Background](#background)
--   [Business Objectives](#objectives)
--   [Technologies Used](#tech)
--   [Features](#features)
--   [How to launch the project](#launch)
+-   [Business Background](https://github.com/BoodooaMonish/raghoo-veggies#business-background-background)
+-   [Business Objectives](https://github.com/BoodooaMonish/raghoo-veggies#business-objectives-objectives)
+-   [Technologies Used](https://github.com/BoodooaMonish/raghoo-veggies#technologies-used-tech)
+-   [Features](https://github.com/BoodooaMonish/raghoo-veggies#features-features)
+-   [How to launch the project](https://github.com/BoodooaMonish/raghoo-veggies#how-to-launch-the-project-launch)
 
 ---
 
-### Business Background {#background}
+### Business Background
 
 Raghoo's Veggies is a family owned business that sells farm grown vegetables to contracted sellers at marketplaces. With a rise in the intergration of technological improvements in the market, the Raghoo family aims to use this opportunity to start an e-commerce system where they will sell their vegetables online only and use a delivery service for vegetable deliveries and payments.
 
 ---
 
-### Business Objectives {#objectives}
+### Business Objectives
 
 By building an e-commerce website, Raghoo's Veggies aims to achieve the following:
 
@@ -38,7 +38,7 @@ By building an e-commerce website, Raghoo's Veggies aims to achieve the followin
 
 ---
 
-### Technologies Used {#tech}
+### Technologies Used
 
 -   HTML5
 -   CSS3
@@ -58,7 +58,7 @@ By building an e-commerce website, Raghoo's Veggies aims to achieve the followin
 
 ---
 
-### Features {#features}
+### Features
 
 -   List of vegetables sold by raghoo's veggies
 -   special deals on vegetables
@@ -80,7 +80,7 @@ By building an e-commerce website, Raghoo's Veggies aims to achieve the followin
 
 ---
 
-### How to launch the project {#launch}
+### How to launch the project
 
 1. Clone/ Download the repository and extract it into your desired folder.
 
